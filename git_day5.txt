@@ -1,0 +1,46 @@
+git and its commands
+git is local server placed in local machine
+user configuration in server
+commiting to the changes
+----------------------
+file removing from server
+-----------------------------
+we can also remove commits,
+we can ignore some unnecessary files not to enter into the server.
+ignored files can be moved into the server and those could not be opened .
+
+=======================================
+global server:google drive and github
+google drive permits the user who have the access
+limited data storage:30 GB data only
+single user:
+A cloud is a virtual machine that provides some space
+===========================
+local repository is in local server/machine
+remote repository is in remote server/global server
+
+ you can reverse the order of git log
+	- git log --oneline --reverse
+ you can rename the commit message
+	- git commit --amend -m "new commit message"
+ you can remove the no.of commits
+	- git reset --hard HEAD^ :removes the recent commit
+	- git reset --hard HEAD~3:3 commits will be removed
+ you can also move to the previous commits
+	- git checkout 7char SHAKey
+ you can reverte back to the recent commit
+	- git switch -
+ you can count the no.of commits
+	- git rev-list HEAD --count
+ =================================
+Remote Server
+	- push the project into the server
+		- git remote add remote_name coped link(github repository)
+		- git remote
+			- remote name
+		- git remote -v:to check the link
+		- git push remote_name master:moving the project into server
+		- git pull remote_name master
+	- touch .ignore
+		- moves files into the ignore file line by line
+		- these files can't be opened
